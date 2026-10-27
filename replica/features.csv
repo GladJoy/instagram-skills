@@ -1,0 +1,36 @@
+feature,area,priority,original,clone,notes
+Login para a dona da conta,conta,must,yes,no,uso próprio: um único usuário
+Conectar Instagram Business/Creator pela Meta,conexão,must,yes,no,Business Login for Instagram; renovar token antes de 60 dias
+Avisar conta pessoal ou permissão faltando,conexão,must,yes,no,erro mais comum dos guias
+Receber webhooks de comentários e DMs,motor,must,yes,no,HTTPS público + verificação de assinatura
+Gatilho: comentário com palavra-chave em post ou Reel,gatilhos,must,yes,no,o loop principal
+Escolher post: um específico / todos / o próximo,gatilhos,must,yes,no,
+Palavras-chave sem diferença de acento e maiúscula,gatilhos,must,yes,no,"Inglês = INGLES = ingles"
+Resposta privada (DM) ao comentário,mensagens,must,yes,no,1 por comentário; até 7 dias
+Não responder duas vezes o mesmo comentário,motor,must,yes,no,tabela ProcessedComment
+DM com texto + botão com link,mensagens,must,yes,no,
+Variável {first_name} na mensagem,mensagens,must,yes,no,
+Lista de automações com liga/desliga,painel,must,yes,no,
+Salvar contato de quem interagiu,contatos,must,yes,no,
+Registro de erro por envio,motor,must,yes,no,ex.: código 10 / 2534022 fora da janela
+Respostas públicas variadas embaixo do comentário,gatilhos,should,yes,no,evita parecer robô
+Gatilho: resposta a story com palavra-chave ou qualquer resposta,gatilhos,should,yes,no,
+Gatilho: palavra-chave na DM,gatilhos,should,yes,no,contém / igual / começa com
+Sequência depois que a pessoa toca no botão,mensagens,should,yes,no,abre a janela de 24 h
+Pedir e salvar e-mail,contatos,should,yes,no,validar formato
+Tags nos contatos,contatos,should,yes,no,
+Caixa de entrada para responder na mão e pausar o bot,inbox,should,yes,no,avisar quando a janela de 24 h fechar
+Estatísticas: disparos / enviados / cliques / e-mails,estatísticas,should,yes,no,cliques via link de redirecionamento próprio
+Testar a automação na própria conta,editor,should,yes,no,
+Excluir palavras (não disparar se contém X),gatilhos,could,yes,no,
+Exportar contatos em CSV,contatos,could,yes,no,
+Imagem na DM,mensagens,could,yes,no,
+Atraso entre mensagens,mensagens,could,yes,no,só dentro da janela de 24 h
+Pedir para seguir antes de mandar o link,mensagens,could,yes,no,checar se a API permite ler "segue você" antes de prometer
+Enviar contato/e-mail para planilha ou ferramenta de e-mail,integrações,could,yes,no,webhook de saída
+Editor visual de arrastar blocos,editor,could,yes,skip,deixaria o projeto em L; lista de passos resolve
+WhatsApp / Messenger / TikTok,canais,could,yes,skip,fora da fatia escolhida
+Planos / pagamento / vários usuários,conta,could,yes,skip,uso próprio
+IA conversacional,mensagens,could,yes,skip,complemento pago no original; fora da fatia
+Marketplace de modelos,modelos,could,yes,skip,rede e conteúdo deles
+Mensagens em massa (broadcast) para contatos,mensagens,could,yes,skip,a Meta só deixa dentro da janela de 24 h; pouco útil no Instagram
